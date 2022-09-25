@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 60vh;
-  background: url("../../images/img/header-bg.jpg") center center;
+  background: url("../../images/img/header-bg2.jpg") center center;
   background-size: cover;
   position: relative;
   /* z-index: 1; */
@@ -619,70 +619,15 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .icon-boxes h4 {
-  font-size: 18px;
-  color: #7f6d68;
-  margin-bottom: 15px;
-}
-
-.about .icon-boxes h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #554945;
-  margin-bottom: 15px;
-}
-
-.about .icon-box {
-  margin-top: 40px;
-}
-
-.about .icon-box .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid #ffcbba;
-  border-radius: 50px;
-  transition: 0.5s;
-  background: #fff;
-}
-
-.about .icon-box .icon i {
-  color: #2181ff;
-  font-size: 32px;
-}
-
-.about .icon-box:hover .icon {
-  background: #2181ff;
-  border-color: #2181ff;
-}
-
-.about .icon-box:hover .icon i {
-  color: #fff;
-}
-
-.about .icon-box .title {
-  margin-left: 85px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.about .icon-box .title a {
-  color: #343a40;
-  transition: 0.3s;
-}
-
-.about .icon-box .title a:hover {
-  color: #2181ff;
-}
-
-.about .icon-box .description {
-  margin-left: 85px;
-  line-height: 24px;
-  font-size: 14px;
+.about-hero{
+  width: 100%;
+  height: 60vh;
+ background: url("../../images/img/about.png") center center;
+  background-size: cover;
+  position: relative;
+  /* z-index: 1; */
+  padding: 0;
+  margin-bottom: -120px;
 }
 /*--------------------------------------------------------------
 # Clients
@@ -1291,4 +1236,101 @@ fill:#fff;
   background: #54a4ff;
   color: #fff;
   text-decoration: none;
+}
+/* contace page */
+.box-left,.box-right{
+  width: 50%;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.box-right{
+  /* justify-content: flex-start; */
+  background-color: #f0f0f3;
+  padding-bottom: 3rem;
+}
+.contact-form{
+  position: relative;
+  max-width: 500px;
+  min-width: 450px;
+}
+.contact-address{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contact-address i{
+  font-size: 25px;
+  color: #0d5bed;
+}
+.box-right  .social-links i{
+  font-size: 30px;
+}
+/* ============================= */
+/* About */
+.about-nav span a{
+   color: #fff;
+   font-size: 25px;
+}
+.about-nav span{
+  padding: 0 0.5rem;
+}
+.about-nav span:hover a{
+      color:#0024ed;
+}
+.about-left div{
+  width: 250px;
+  
+  
+}
+.about-left li{
+list-style: none;
+padding: 0.2rem;
+
+border: 1px solid #f4f4f4;
+}
+.about-left{
+  height: 100%;
+  border-left:5px solid #0024ed;
+  border-radius: 7px 0px 0px 7px;
+  background-color: #f6f7fc;
+}
+@media (max-width:993px) {
+  #contact-page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-right{
+    width: 100%;
+  }
+}
+/* responsiveness */
+@media(max-width:600px){
+  /* about */
+  .about-container{
+    flex-direction: column-reverse;
+  }
+
+}
+@media(max-width:500px){
+
+  #hero{
+    background-image: url("../../images/img/health-insurance.jpg");
+  }
+  /* contact page */
+  .contact-form{
+    min-width: 95%;
+  }
+  .box-left{
+    width: 100%;
+  }
+  /* about */
+  
+  .about-nav{
+    margin: auto;
+  }
 }
